@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+
+    <p>Pilih Warna Background</p>
+
+    <select id="mySelect" onchange="myFunction()">
+    <option value="white">Putih</option>
+    <option value="red">Merah</option>
+    <option value="blue">Biru</option>
+    <option value="yellow">Kuning</option>
+    
+    </select>
+
+    <p>Saat Kamu Memilih Warna, Background Akan Berubah</p>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            document.body.style.backgroundColor = x;
+        }
+    </script>
+</body>
+
+</html>
